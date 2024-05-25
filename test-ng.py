@@ -20,6 +20,6 @@ for i in range(len(nlabo_exit_customer)):
 # for i in range(len(nlabo_exit_customer)):
 # nlabo_exit_customer.at[i, "exit_date"] = nlabo_exit_customer.at[i, "end_date"] - relativedelta(months=1)
 
-nlabo_exit_customer["年月"] = nlabo_exit_customer["exit_date"].dt.strftime("%Y%m")
+nlabo_exit_customer["年月"] = nlabo_exit_customer["exit_date"].dt.strftime("%Y%m")  # AttributeError
 
 print(nlabo_exit_customer)
